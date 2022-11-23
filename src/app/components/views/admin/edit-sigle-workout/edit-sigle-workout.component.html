@@ -1,0 +1,23 @@
+
+ <form class="p-4" [formGroup]="updateForm" (ngSubmit)="onUpdate()">
+  <div class="mb-3">
+    <label for="name" class="form-label">name</label>
+    <input type="text" class="form-control"  formControlName="name" >
+  </div>
+<div class="mb-3">
+  <label for="level" class="form-label">level</label>
+  <input type="text" class="form-control"  formControlName="level" >
+</div>
+<div class="mb-3">
+  <label for="body_place" class="form-label">body place</label>
+  <input type="text" class="form-control" formControlName="body_place" >
+</div>
+
+
+<!-- <div class="mb-3">
+  <label for="fileSource" class="form-label">Image </label>
+  <input type="file" formControlName="fileSource" >
+</div> -->
+<button  type="submit" class="btn btn-primary">Add Single workout </button>
+</form>
+
